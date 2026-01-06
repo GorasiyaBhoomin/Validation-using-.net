@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="statemanagement.aspx" />
     <Content Include="validation_control_demo.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="statemanagement.aspx.cs">
+      <DependentUpon>statemanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statemanagement.aspx.designer.cs">
+      <DependentUpon>statemanagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="validation_control_demo.aspx.cs">
       <DependentUpon>validation_control_demo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
