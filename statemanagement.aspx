@@ -21,9 +21,9 @@
 
         3)cookie example<br />
         <asp:TextBox ID="tb2" runat="server"></asp:TextBox>
-        <asp:Button ID="Button6" runat="server" Text="create cookie" />
-        <asp:Button ID="Button7" runat="server" Text="read cookie" />
-        <asp:Label ID="lblcookie" runat="server" Visible="False"></asp:Label>
+        <asp:Button ID="Button6" runat="server" Text="create cookie" OnClick="Button6_Click" />
+        <asp:Button ID="Button7" runat="server" Text="read cookie" OnClick="Button7_Click" />
+        <asp:Label ID="lblcookie" runat="server"></asp:Label>
         <br /><br /><br /><br />
         4)query string example<br />
         <asp:TextBox ID="tb3" runat="server"></asp:TextBox>

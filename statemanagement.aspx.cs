@@ -39,5 +39,25 @@ namespace WebApplication1
             HiddenField2.Value = "6996";
             lblhidden.Text = "hidden field value:" + HiddenField2.Value;
         }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            //HttpCookie cookie = new HttpCookie("mycookie");
+            Response.Cookies["mycookie"].Value = tb2.Text;
+            Response.Cookies["mycookie"].Expires = DateTime.Now.AddMinutes(4);
+            lblcookie.Text = "cookie created";
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            if (Request.Cookies["mycookie"] != null)
+            {
+                lblcookie.Text = "cookie value:" + Request.Cookies["mycookie"].Value;
+            }
+            else
+            {
+                lblcookie.Text = "cookie not found";
+            }
+        }
     }
 }
